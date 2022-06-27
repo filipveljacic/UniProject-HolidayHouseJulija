@@ -149,7 +149,7 @@ h1 {
 
     .splitScreen > #text > p {
         padding: 0 7.5% 75px 7.5%;
-        font-size: 23px;
+        font-size: 1.79vw;
         letter-spacing: 0;
         line-height: 35px;
     }
@@ -174,17 +174,19 @@ h1 {
     }
 
     .listBox > ul {
-        width: 90%; 
-        margin: 35px 5% 0 5%;
+        width: 100%;
+        margin: 35px 0 0 0;
         padding: 0;
     }
 
     .listBox > ul > h3 {
+        margin: 0 5% 0 5%;
         font-size: 40px;
     }
 
     .listBox > ul > li {
-        font-size: 23px;
+        margin: 0 5% 0 5%;
+        font-size: 1.79vw;
         letter-spacing: 0;
         line-height: 35px;
     }
