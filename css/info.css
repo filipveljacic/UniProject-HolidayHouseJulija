@@ -1,0 +1,182 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 185px 27px 40px 27px;
+    color: #00203f;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+/* /////////////// TEXT & IMAGE SECTION \\\\\\\\\\\\\\\ */
+/* /////////////// TEXT & IMAGE SECTION \\\\\\\\\\\\\\\ */
+
+.splitScreen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 35px 0 0 0;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+.splitScreen > #text {
+    width: 50%;
+    padding: 0 2.5% 0 5%;
+}
+
+.splitScreen > #text > p {
+    margin: 0;
+    padding: 0;
+    color: #00203f;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.splitScreen > #banner {
+    width: 50%;
+    padding: 0 5% 0 2.5%;
+    font-size: 0;
+}
+
+.splitScreen > #banner > img {
+    width: 100%;
+    margin: 0;
+}
+
+/* /////////////// LIST SECTION \\\\\\\\\\\\\\\ */
+/* /////////////// LIST SECTION \\\\\\\\\\\\\\\ */
+
+.list {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    color: #00203f;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+.list > h2 {
+    margin: 50px 0 0 0;
+    padding: 50px 0 0 0;
+    text-align: left;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-top: 1px solid #c5c1bb;
+}
+
+.listBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1000px;
+}
+
+.listBox > ul {
+    padding: 0;
+    margin: 35px 50px 0 50px;
+    width: 290px;
+    list-style-type: none;
+}
+
+.listBox > ul > h3 {
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.listBox > ul > li {
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+#footer {
+    width: 100%;
+    position: static;
+    margin: 0;
+    padding: 75px 0 35px 0;
+    color: #00203f;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 1280px)
+{
+    .splitScreen {
+        flex-direction: column;
+    }
+
+    .splitScreen > #text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .splitScreen > #text > p {
+        padding: 0 7.5% 75px 7.5%;
+    }
+
+    .splitScreen > #banner {
+        width: 100%;
+        padding: 0;
+        border-left: none;
+    }
+
+    .list > h2 {
+        margin: 75px 0 15px 0;
+        padding: 0;
+        text-align: center;
+        border-top: none;
+    }
+
+    .listBox {
+        height: 1300px;
+    }
+
+    .listBox > ul {
+        padding: 0;
+        margin: 35px 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .listBox {
+        height: 100%;
+    }
+
+    .listBox > ul {
+        width: 90%; 
+        margin: 35px 5% 0 5%;
+    }
+}

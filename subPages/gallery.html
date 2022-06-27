@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fotografije</title>
+
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/gallery.css" />
+</head>
+
+<body>
+    <div class="navBar">
+        <a href="#!" class="icon" onclick="menuOpenClose(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </a>
+        <script type="text/javascript" src="../js/navMenu.js"></script>
+        <a id="logo" href="../home.html"><img src="../images/HolidayHouseLogo.svg" height=100px /></a>
+        <a href="#" class="iconHidden">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </a>
+        <!--Side menu-->
+        <div id="menu">
+            <a href="../home.html">Početna</a>
+            <a href="info.html">Pregled</a>
+            <a href="gallery.html">Fotografije</a>
+            <a href="contents.html">Sadržaji u blizini</a>
+            <a href="location.html">Lokacija</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+    </div>
+
+    <!--scrollbar ID for JavaScript-->
+    <div id="scrollbar">
+        <h1>Fotografije</h1>
+        <div class="imageGrid">
+            <img id="img1" src="../images/houseFront.jpg"/>
+            <img id="img2" src="../images/patio1.jpg"/>
+            <img id="img3" src="../images/patio2.jpg"/>
+            <img id="img4" src="../images/patio3.jpg"/>
+            <img id="img5" src="../images/patio4.jpg"/>
+            <img id="img6" src="../images/bedroom1_1.jpg"/>
+            <img id="img7" src="../images/bedroom1_2.jpg"/>
+            <img id="img8" src="../images/bathroom1.jpg"/>
+            <img id="img9" src="../images/hallway.jpg"/>
+            <img id="img10" src="../images/bedroom2_1.jpg"/>
+            <img id="img11" src="../images/bedroom2_2.jpg"/>
+            <img id="img12" src="../images/bathroom2.jpg"/>
+            <img id="img13" src="../images/kitchen1.jpg"/>
+            <img id="img14" src="../images/kitchen2.jpg"/>
+            <img id="img15" src="../images/parking.jpg"/>
+            <img id="img16" src="../images/bocce.jpg"/>
+        </div>
+        <script type="text/javascript" src="../js/imageGrid.js"></script>
+        <p id="footer">&copy; Filip Veljačić, 2022</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 185px 27px 40px 27px;
+    color: #00203f;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+/* /////////////// LIST SECTION \\\\\\\\\\\\\\\ */
+/* /////////////// LIST SECTION \\\\\\\\\\\\\\\ */
+
+.list {
+    width: 90%;
+    margin: 0 5% 0 5%;
+    color: #00203f;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+.listBox {
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    height: 450px;
+}
+
+.listBox > ul {
+    padding: 0;
+    margin: 35px 50px 0 50px;
+    width: 310px;
+    list-style-type: none;
+}
+
+.listBox > ul > h3 {
+    margin: 0px 0px 10px 0px;
+    padding: 0;
+    text-align: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.listBox > ul > li {
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 75px 0 35px 0;
+    color: #00203f;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 1350px)
+{
+    .listBox {
+        height: 800px;
+    }
+
+    #footer {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 1080px)
+{
+    .listBox {
+        height: 100%;
+        align-content: start;
+    }
+
+    .listBox > ul {
+        width: 90%;
+        margin: 35px 5% 0 5%;
+    }
+}
+
+@media screen and (max-height: 800px)
+{
+    #footer {
+        position: static;
+    }
+}

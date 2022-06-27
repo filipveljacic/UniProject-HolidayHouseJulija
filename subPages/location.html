@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lokacija</title>
+
+    <link rel="stylesheet" href="../css/navBar.css" />
+    <link rel="stylesheet" href="../css/location.css" />
+</head>
+
+<body>
+    <div class="navBar">
+        <a href="#!" class="icon" onclick="menuOpenClose(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </a>
+        <script type="text/javascript" src="../js/navMenu.js"></script>
+        <a id="logo" href="../home.html"><img src="../images/HolidayHouseLogo.svg" height=100px /></a>
+        <a href="#" class="iconHidden">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </a>
+        <!--Side menu-->
+        <div id="menu">
+            <a href="../home.html">Početna</a>
+            <a href="info.html">Pregled</a>
+            <a href="gallery.html">Galerija</a>
+            <a href="contents.html">Sadržaji u blizini</a>
+            <a href="location.html">Lokacija</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+    </div>
+
+    <!--scrollbar ID for JavaScript-->
+    <div id="scrollbar">
+        <h1>Lokacija</h1>
+        <!--Text & Image section-->
+        <div class="splitScreen">
+            <div id="text">
+                <p>
+                    Ova kuća nalazi se u Bribiru, sjedištu Vinodolske Općine.</br></br>Oko 40 km od Rijeke, 9 km
+                    od Crikvenice, 4 km od Novog Vinodolskog, a zračna luka Rijeka je udaljena 30-tak kilometara. U
+                    blizini se nalazi i Selce, te šuma Lukovo.
+                </p>
+            </div>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2813.5065201352536!2d14.764346815799328!3d45.15659196193654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4763798091f52711%3A0x41f0651c470035e1!2sHoliday%20House%20Julija!5e0!3m2!1shr!2shr!4v1643735205751!5m2!1shr!2shr"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p id="footer">&copy; Filip Veljačić, 2022</p>
+    </div>
+</body>
+
+</html>

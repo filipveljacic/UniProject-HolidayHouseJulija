@@ -1,0 +1,101 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 185px 27px 75px 27px;
+    color: #00203f;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+.imageGrid {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 2.5% 0 2.5%;
+    overflow: hidden;
+}
+
+.imageGrid > img {
+    max-width: 25%;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.15s;
+}
+
+.imageGrid > img:hover {
+    transform: scale(1.75);
+    cursor: pointer;
+}
+
+#footer {
+    width: 100%;
+    position: static;
+    margin: 0;
+    padding: 50px 0 50px 0;
+    color: #00203f;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+/* /////////////// IMAGE GRID HOVER FIX \\\\\\\\\\\\\\\ */
+/* /////////////// IMAGE GRID HOVER FIX \\\\\\\\\\\\\\\ */
+
+#img1:hover { transform-origin: top left; }
+
+#img4:hover { transform-origin: top right; }
+
+#img13:hover { transform-origin: bottom left; }
+
+#img16:hover { transform-origin: bottom  right; }
+
+#img2:hover, #img3:hover { transform-origin: top; }
+
+#img5:hover, #img9:hover { transform-origin: left; }
+
+#img8:hover, #img12:hover { transform-origin: right; }
+
+#img14:hover, #img15:hover { transform-origin: bottom; }
+
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 1080px)
+{
+    .imageGrid {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .imageGrid > img {
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+    #img2:hover { transform-origin: top right; }
+    
+    #img15:hover { transform-origin: bottom left; }
+    
+    #img3:hover, #img5:hover, #img7:hover, #img9:hover, #img11:hover, #img13:hover { transform-origin: left; }
+    
+    #img4:hover, #img6:hover, #img8:hover, #img10:hover, #img12:hover, #img14:hover { transform-origin: right; }
+}

@@ -1,0 +1,120 @@
+.navBar {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    height: 110px;
+    width: 100%;
+    background-color: #c5c1bb;
+    align-items: center;
+}
+
+.icon {
+    margin: auto auto auto 20px;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+.iconHidden {
+    margin: auto 20px auto auto;
+    visibility: hidden;
+}
+
+.icon > .line1, .line2, .line3 {
+    width: 34px;
+    height: 4px;
+    display: flex;
+    flex-direction: column;
+    background-color: #00203f;
+    margin: 7px 5px 7px 5px;
+    transition: 0.3s;
+}
+
+.icon:hover > .line1, .icon:hover > .line2, .icon:hover > .line3 {
+    background-color: #fafafa;
+}
+
+.iconHidden > .line1, .line2, .line3 {
+    width: 34px;
+    height: 4px;
+    margin: 7px 5px 7px 5px;
+}
+
+.openClose > .line1 { transform: rotate(45deg) translate(8px, 8px); }
+  
+.openClose > .line2 { opacity: 0; }
+  
+.openClose > .line3 { transform: rotate(-45deg) translate(8px, -8px); }
+
+.navBar > #logo {
+    font-size: 0;
+    opacity: 0;
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+/* /////////////// SIDE MENU \\\\\\\\\\\\\\\ */
+/* /////////////// SIDE MENU \\\\\\\\\\\\\\\ */
+
+.navBar > #menu {
+    display: none;
+    flex-direction: column;
+    z-index: 2;
+    position: absolute;
+    top: 110px;
+    height: calc(100vh - 110px);
+    overflow-y: auto;
+    background-color: #fafafa;
+    box-shadow: 6px 0 15px 0 rgba(0,0,0,0.1);
+    animation: 0.4s ease-in-out appear forwards;
+}
+
+.navBar > #menu > a {
+    color: #00203f;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 18px 175px 18px 27px;
+    text-decoration: none;
+    border-bottom: 1px solid #c5c1bb;
+}
+
+.navBar > #menu > a:hover {
+    background-color: #c5c1bb;
+    color: #fafafa;
+    cursor: pointer;
+    animation: 0.4s menuItem;
+}
+
+/* /////////////// ANIMATIONS \\\\\\\\\\\\\\\ */
+/* /////////////// ANIMATIONS \\\\\\\\\\\\\\\ */
+
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes menuItem {
+    from {
+        background-color: rgb(197, 193, 187, 0);
+        color: rgb(250, 250, 250, 0);
+    }
+    to {
+        background-color: rgb(197, 193, 187, 1);
+        color: rgb(250, 250, 250, 1);
+    }
+}
+
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 1080px)
+{
+    .navBar > #menu {
+        width: 100%;
+    }
+
+    .navBar > #menu > a {
+        text-align: center;
+        padding: 18px 0px 18px 0px;
+    }
+}
