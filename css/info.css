@@ -13,7 +13,7 @@ body {
 
 h1 {
     margin: 0;
-    padding: 185px 27px 40px 27px;
+    padding: 75px 27px 40px 27px;
     color: #00203f;
     text-align: center;
     font-size: 50px;
@@ -133,6 +133,11 @@ h1 {
 
 @media screen and (max-width: 1280px)
 {
+    h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
     .splitScreen {
         flex-direction: column;
     }
@@ -144,6 +149,9 @@ h1 {
 
     .splitScreen > #text > p {
         padding: 0 7.5% 75px 7.5%;
+        font-size: 23px;
+        letter-spacing: 0;
+        line-height: 35px;
     }
 
     .splitScreen > #banner {
@@ -155,22 +163,12 @@ h1 {
     .list > h2 {
         margin: 75px 0 15px 0;
         padding: 0;
+        font-size: 50px;
+        letter-spacing: 1px;
         text-align: center;
         border-top: none;
     }
 
-    .listBox {
-        height: 1300px;
-    }
-
-    .listBox > ul {
-        padding: 0;
-        margin: 35px 50px 0 50px;
-    }
-}
-
-@media screen and (max-width: 850px)
-{
     .listBox {
         height: 100%;
     }
@@ -178,5 +176,20 @@ h1 {
     .listBox > ul {
         width: 90%; 
         margin: 35px 5% 0 5%;
+        padding: 0;
+    }
+
+    .listBox > ul > h3 {
+        font-size: 40px;
+    }
+
+    .listBox > ul > li {
+        font-size: 23px;
+        letter-spacing: 0;
+        line-height: 35px;
+    }
+
+    #footer {
+        font-size: 18px;
     }
 }

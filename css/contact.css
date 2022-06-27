@@ -13,7 +13,7 @@ body {
 
 h1 {
     margin: 0;
-    padding: 185px 27px 40px 27px;
+    padding: 75px 27px 40px 27px;
     color: #00203f;
     text-align: center;
     font-size: 50px;
@@ -43,7 +43,6 @@ h1 {
     text-decoration: none;
     color: #00203f;
     font-weight: normal;
-    letter-spacing: 1px;
 }
 
 #contactList > div > a:hover {
@@ -66,6 +65,23 @@ h1 {
 
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 1080px)
+{
+    h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
+    #contactList > div {
+        font-size: 23px;
+        letter-spacing: 0px;
+    }
+
+    #footer {
+        font-size: 18px;
+    }
+}
 
 @media screen and (max-height: 640px)
 {

@@ -13,7 +13,7 @@ body {
 
 h1 {
     margin: 0;
-    padding: 185px 27px 40px 27px;
+    padding: 75px 27px 40px 27px;
     color: #00203f;
     text-align: center;
     font-size: 50px;
@@ -95,6 +95,11 @@ h1 {
 
 @media screen and (max-width: 1080px)
 {
+    h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+
     .listBox {
         height: 100%;
         align-content: start;
@@ -103,6 +108,20 @@ h1 {
     .listBox > ul {
         width: 90%;
         margin: 35px 5% 0 5%;
+    }
+
+    .listBox > ul > h3 {
+        font-size: 40px;
+    }
+
+    .listBox > ul > li {
+        font-size: 23px;
+        letter-spacing: 0;
+        line-height: 35px;
+    }
+
+    #footer {
+        font-size: 18px;
     }
 }
 

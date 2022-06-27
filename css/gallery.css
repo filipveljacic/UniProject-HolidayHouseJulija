@@ -13,7 +13,7 @@ body {
 
 h1 {
     margin: 0;
-    padding: 185px 27px 75px 27px;
+    padding: 75px 27px 75px 27px;
     color: #00203f;
     text-align: center;
     font-size: 50px;
@@ -81,6 +81,11 @@ h1 {
 
 @media screen and (max-width: 1080px)
 {
+    h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+    
     .imageGrid {
         width: 100%;
         margin: 0;
@@ -98,4 +103,8 @@ h1 {
     #img3:hover, #img5:hover, #img7:hover, #img9:hover, #img11:hover, #img13:hover { transform-origin: left; }
     
     #img4:hover, #img6:hover, #img8:hover, #img10:hover, #img12:hover, #img14:hover { transform-origin: right; }
+
+    #footer {
+        font-size: 18px;
+    }
 }

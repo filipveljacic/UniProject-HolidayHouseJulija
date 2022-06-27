@@ -1,7 +1,6 @@
 .navBar {
     display: flex;
-    position: fixed;
-    z-index: 2;
+    position: static;
     top: 0px;
     height: 110px;
     width: 100%;
@@ -52,6 +51,10 @@
     animation: 0.4s ease-in-out appear forwards;
 }
 
+.navBar > #logo > img {
+    height: 100px;
+}
+
 /* /////////////// SIDE MENU \\\\\\\\\\\\\\\ */
 /* /////////////// SIDE MENU \\\\\\\\\\\\\\\ */
 
@@ -61,19 +64,19 @@
     z-index: 2;
     position: absolute;
     top: 110px;
-    height: calc(100vh - 110px);
     overflow-y: auto;
     background-color: #fafafa;
     box-shadow: 6px 0 15px 0 rgba(0,0,0,0.1);
     animation: 0.4s ease-in-out appear forwards;
 }
 
+
 .navBar > #menu > a {
     color: #00203f;
-    font-size: 22px;
+    font-size: 25px;
     letter-spacing: 2px;
     font-weight: bold;
-    padding: 18px 175px 18px 27px;
+    padding: 25px 175px 25px 27px;
     text-decoration: none;
     border-bottom: 1px solid #c5c1bb;
 }
@@ -83,6 +86,10 @@
     color: #fafafa;
     cursor: pointer;
     animation: 0.4s menuItem;
+}
+
+#noborder {
+    border: none !important;
 }
 
 /* /////////////// ANIMATIONS \\\\\\\\\\\\\\\ */
@@ -109,12 +116,46 @@
 
 @media screen and (max-width: 1080px)
 {
-    .navBar > #menu {
-        width: 100%;
+    .navBar {
+        height: 150px;
+    }
+    
+    .icon {
+        margin: auto auto auto 25px;
+    }
+    
+    .iconHidden {
+        margin: auto 25px auto auto;
+    }
+    
+    .icon > .line1, .line2, .line3 {
+        width: 40px;
+        height: 6px;
+        margin: 8px 6px 8px 6px;
     }
 
+    .openClose > .line1 { transform: rotate(45deg) translate(10px, 10px); }
+      
+    .openClose > .line3 { transform: rotate(-45deg) translate(10px, -10px); }
+
+    .navBar > #logo > img {
+        height: 140px;
+    }
+
+    .navBar > #menu {
+        width: 100%;
+        height: calc(100vh - 150px);
+        top: 150px;
+    }
+    
     .navBar > #menu > a {
-        text-align: center;
-        padding: 18px 0px 18px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 40px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        flex-grow: 3;
     }
 }

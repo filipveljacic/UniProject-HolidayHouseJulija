@@ -11,7 +11,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.splitScreen {
+.main {
     background-image: url('../images/banner.jpeg');
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,17 @@ body {
     animation: 0.5s ease-in-out appear forwards;
 }
 
-.splitScreen > .menu {
+.main > .logo {
+    padding: 0;
+    margin: 20px 0px 20px 0px;
+    font-size: 0;
+}
+
+.main > .logo > img {
+    height: 250px;
+}
+
+.main > .menu {
     margin: 8px 10px 8px 10px;
     padding: 30px 0px 30px 0px;
     width: 400px;
@@ -42,21 +52,11 @@ body {
     border-radius: 2px;
 }
 
-.splitScreen > .menu:hover {
+.main > .menu:hover {
     background-color: #001830;
 }
 
-.splitScreen > .logo {
-    padding: 0;
-    margin: 20px 0px 20px 0px;
-    font-size: 0;
-}
-
-.splitScreen > .logo > img {
-    height: 250px;
-}
-
-.splitScreen > p {
+.main > p {
     width: 100%;
     position: static;
     margin: 0;
@@ -81,17 +81,17 @@ body {
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 
-@media screen and (max-width: 1080px) {
-    #splitScreen {
-        flex-direction: column;
-        height: 1500px;
+@media screen and (max-width: 1080px)
+{
+    .main > .menu {
+        margin: 10px 13px 10px 13px;
+        padding: 35px 0px 35px 0px;
+        width: 550px;
+        font-size: 35px;
+        letter-spacing: 2px;
     }
-    .splitScreen {
-        height: 750px;
-        width: 100%;
-        box-shadow: inset 0 -8px 50px -7px rgb(135, 135, 135, 0.55);
-    }
-    .splitScreen > p {
-        visibility: hidden;
+
+    .main > p {
+        font-size: 18px;
     }
 }

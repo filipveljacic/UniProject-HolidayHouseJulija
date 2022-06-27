@@ -13,7 +13,7 @@ body {
 
 h1 {
     margin: 0;
-    padding: 185px 27px 40px 27px;
+    padding: 75px 27px 40px 27px;
     color: #00203f;
     text-align: center;
     font-size: 50px;
@@ -77,6 +77,10 @@ h1 {
 
 @media screen and (max-width: 1080px)
 {
+    h1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
     .splitScreen {
         flex-direction: column;
     }
@@ -88,6 +92,9 @@ h1 {
 
     .splitScreen > #text > p {
         padding: 0 7.5% 75px 7.5%;
+        font-size: 23px;
+        letter-spacing: 0;
+        line-height: 35px;
     }
 
     .splitScreen > #map {
@@ -97,6 +104,9 @@ h1 {
 
     .splitScreen > #map > iframe {
         width: 100%;
-        height: 500px;
+    }
+
+    #footer {
+        font-size: 18px;
     }
 }
