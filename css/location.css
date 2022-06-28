@@ -114,3 +114,12 @@ h1 {
         font-size: 20px;
     }
 }
+
+@media screen and (min-height: 1480px)
+{
+    #footer {
+        position: fixed;
+        bottom: 0;
+        font-size: 20px;
+    }
+}
