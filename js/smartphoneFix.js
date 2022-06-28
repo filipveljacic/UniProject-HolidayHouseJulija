@@ -1,6 +1,7 @@
-let isMobile = window.matchMedia("(any-pointer:coarse)").matches;
-var fixFont = document.querySelector("#text") = isMobile.matches;
+let fixFont;
 
-if (isMobile == true) {
+if (window.matchMedia("(any-pointer:coarse)").matches) {
     fixFont.style.fontSize = "11.5px";
 }
+
+document.getElementById("text") = fixFont;
