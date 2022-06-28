@@ -199,7 +199,7 @@ h1 {
 @media screen and (max-height: 1080px)
 {
     .splitScreen > #text > p {
-        font-size: 12px;
-        line-height: 17.5px;
+        font-size: 12px !important;
+        line-height: 17.5px !important;
     }
 }
