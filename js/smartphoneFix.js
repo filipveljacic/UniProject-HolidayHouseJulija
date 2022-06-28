@@ -1,7 +1,8 @@
-let fixFont;
-
-if (window.matchMedia("(any-pointer:coarse)").matches) {
-    fixFont.style.fontSize = "11.5px";
+function fixer(fixFont){
+    if (fixFont.matches) {
+        document.getElementById("text").style.fontSize = "11.5px";
+    }
 }
 
-document.getElementById("text").innerHTML = fixFont;
+const fixFont = window.matchMedia("(any-pointer:coarse)")
+fixer(fixFont);
