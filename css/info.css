@@ -131,7 +131,7 @@ h1 {
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1080px)
 {
     h1 {
         font-size: 60px;
@@ -196,7 +196,7 @@ h1 {
     }
 }
 
-@media screen and (max-height: 1080px)
+@media screen and (min-height: 1080px) and (max-width: 1080px)
 {
     .splitScreen > #text > p {
         font-size: 12px !important;
