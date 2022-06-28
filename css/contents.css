@@ -115,13 +115,13 @@ h1 {
     }
 
     .listBox > ul > li {
-        font-size: 23px;
+        font-size: 25px;
         letter-spacing: 0;
-        line-height: 35px;
+        line-height: 38px;
     }
 
     #footer {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
