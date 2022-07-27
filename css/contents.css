@@ -125,11 +125,6 @@ video {
 
 @media screen and (max-width: 1080px)
 {
-    h1 {
-        font-size: 60px;
-        letter-spacing: 1px;
-    }
-
     .listBox {
         height: 100%;
         align-content: start;
@@ -140,16 +135,6 @@ video {
         margin: 35px 5% 0 5%;
     }
 
-    .listBox > ul > h3 {
-        font-size: 40px;
-    }
-
-    .listBox > ul > li {
-        font-size: 25px;
-        letter-spacing: 0;
-        line-height: 38px;
-    }
-
     video {
         width: 100%;
     }
@@ -157,12 +142,5 @@ video {
     #videoCopyright {
         width: 80%;
         margin: 20px 10% 0 10%;
-        font-size: 25px;
-        letter-spacing: 0;
-        line-height: 38px;
-    }
-
-    #footer {
-        font-size: 20px;
     }
 }
