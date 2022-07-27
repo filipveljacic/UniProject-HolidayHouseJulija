@@ -73,6 +73,28 @@ video {
     position: static;
 }
 
+#videoCopyright {
+    margin: 20px auto 0 auto;
+    padding: 0;
+    width: 1000px;
+    display: block;
+    position: static;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+#videoCopyright > a {
+    text-decoration: underline;
+    color: #00203f;
+    cursor: pointer;
+}
+
+#videoCopyright > a:hover {
+    color: #c5c1bb;
+}
+
 #footer {
     width: 100%;
     position: static;
@@ -130,6 +152,14 @@ video {
 
     video {
         width: 100%;
+    }
+
+    #videoCopyright {
+        width: 80%;
+        margin: 20px 10% 0 10%;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: 38px;
     }
 
     #footer {

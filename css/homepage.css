@@ -111,9 +111,9 @@ body {
     }
 }
 
-@media screen and (max-height: 930px)
+@media screen and (max-height: 950px)
 {
     .main {
-        height: 930px;
+        height: 950px;
     }
 }
