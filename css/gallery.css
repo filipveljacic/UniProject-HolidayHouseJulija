@@ -11,18 +11,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1 {
-    margin: 0;
-    padding: 75px 27px 75px 27px;
-    color: #00203f;
-    text-align: center;
-    font-size: 50px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    opacity: 0;
-    animation: 0.4s ease-in-out appear forwards;
-}
-
 .imageGrid {
     width: 95%;
     display: flex;

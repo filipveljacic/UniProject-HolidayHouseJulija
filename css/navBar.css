@@ -118,8 +118,8 @@
 {
     .navBar > #menu {
         width: 100%;
-        height: calc(100% - 100px);
-        top: 100px;
+        height: calc(100% - 110px);
+        top: 110px;
     }
     
     .navBar > #menu > a {
