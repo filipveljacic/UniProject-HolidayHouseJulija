@@ -65,9 +65,17 @@ h1 {
     line-height: 28px;
 }
 
+video {
+    margin: 40px auto 0 auto;
+    padding: 0;
+    width: 1000px;
+    display: block;
+    position: static;
+}
+
 #footer {
     width: 100%;
-    position: fixed;
+    position: static;
     bottom: 0;
     margin: 0;
     padding: 75px 0 35px 0;
@@ -120,14 +128,11 @@ h1 {
         line-height: 38px;
     }
 
+    video {
+        width: 100%;
+    }
+
     #footer {
         font-size: 20px;
-    }
-}
-
-@media screen and (max-height: 800px)
-{
-    #footer {
-        position: static;
     }
 }
