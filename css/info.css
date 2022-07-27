@@ -133,11 +133,6 @@ h1 {
 
 @media screen and (max-width: 1080px)
 {
-    h1 {
-        font-size: 60px;
-        letter-spacing: 1px;
-    }
-
     .splitScreen {
         flex-direction: column;
     }
@@ -149,13 +144,6 @@ h1 {
 
     .splitScreen > #text > p {
         padding: 0 7.5% 75px 7.5%;
-        font-size: 25px;
-        letter-spacing: 0;
-        line-height: 38px;
-        text-size-adjust: 100%; 
-        -ms-text-size-adjust: 100%; 
-        -moz-text-size-adjust: 100%; 
-        -webkit-text-size-adjust: 100%;
     }
 
     .splitScreen > #banner {
@@ -167,8 +155,6 @@ h1 {
     .list > h2 {
         margin: 75px 0 15px 0;
         padding: 0;
-        font-size: 50px;
-        letter-spacing: 1px;
         text-align: center;
         border-top: none;
     }
@@ -185,17 +171,9 @@ h1 {
 
     .listBox > ul > h3 {
         margin: 0 5% 0 5%;
-        font-size: 40px;
     }
 
     .listBox > ul > li {
         margin: 0 5% 0 5%;
-        font-size: 25px;
-        letter-spacing: 0;
-        line-height: 38px;
-    }
-
-    #footer {
-        font-size: 20px;
     }
 }
