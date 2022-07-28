@@ -36,9 +36,9 @@ body {
     width: 100%;
     position: static;
     margin: 0;
-    padding: 50px 0 50px 0;
+    padding: 35px 0 35px 0;
     color: #00203f;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     letter-spacing: 1px;
     opacity: 0;
@@ -67,7 +67,7 @@ body {
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1440px)
 {
     .imageGrid {
         width: 100%;
