@@ -115,7 +115,7 @@ video {
 @media screen and (max-width: 1600px)
 {
     .listBox {
-        height: 550px;
+        height: 600px;
     }
 }
 
