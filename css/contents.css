@@ -112,17 +112,6 @@ video {
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 
-@media screen and (max-width: 1350px)
-{
-    .listBox {
-        height: 800px;
-    }
-
-    #footer {
-        position: static;
-    }
-}
-
 @media screen and (max-width: 1080px)
 {
     .listBox {

@@ -99,11 +99,3 @@ h1 {
         width: 100%;
     }
 }
-
-@media screen and (min-height: 1480px)
-{
-    #footer {
-        position: fixed;
-        bottom: 0;
-    }
-}
