@@ -115,11 +115,7 @@ video {
 @media screen and (max-width: 1350px)
 {
     .listBox {
-        height: 800px;
-    }
-
-    #footer {
-        position: static;
+        height: 850px;
     }
 }
 

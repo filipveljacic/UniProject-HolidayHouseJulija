@@ -131,6 +131,13 @@ h1 {
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 
+@media screen and (max-width: 1280px)
+{
+    .listBox {
+        height: 1300px;
+    }
+}
+
 @media screen and (max-width: 1080px)
 {
     .splitScreen {
