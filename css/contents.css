@@ -23,8 +23,7 @@ h1 {
     animation: 0.4s ease-in-out appear forwards;
 }
 
-/* /////////////// LIST SECTION \\\\\\\\\\\\\\\ */
-/* /////////////// LIST SECTION \\\\\\\\\\\\\\\ */
+/* /////////////// List Section \\\\\\\\\\\\\\\ */
 
 .list {
     width: 90%;
@@ -64,6 +63,8 @@ h1 {
     letter-spacing: 1px;
     line-height: 28px;
 }
+
+/* /////////////// Video Section \\\\\\\\\\\\\\\ */
 
 video {
     margin: 40px auto 0 auto;
@@ -109,8 +110,7 @@ video {
     animation: 0.4s ease-in-out appear forwards;
 }
 
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// Screensize Adjustments \\\\\\\\\\\\\\\ */
 
 @media screen and (max-width: 1600px)
 {

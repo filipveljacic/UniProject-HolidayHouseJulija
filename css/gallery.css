@@ -45,8 +45,7 @@ body {
     animation: 0.4s ease-in-out appear forwards;
 }
 
-/* /////////////// IMAGE GRID HOVER FIX \\\\\\\\\\\\\\\ */
-/* /////////////// IMAGE GRID HOVER FIX \\\\\\\\\\\\\\\ */
+/* /////////////// Image Grid Hover Fix \\\\\\\\\\\\\\\ */
 
 #img1:hover { transform-origin: top left; }
 
@@ -64,8 +63,7 @@ body {
 
 #img14:hover, #img15:hover { transform-origin: bottom; }
 
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// Screensize Adjustments \\\\\\\\\\\\\\\ */
 
 @media screen and (max-width: 1440px)
 {

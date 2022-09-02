@@ -63,8 +63,7 @@ h1 {
     animation: 0.4s ease-in-out appear forwards;
 }
 
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// Screensize Adjustments \\\\\\\\\\\\\\\ */
 
 @media screen and (max-height: 640px)
 {

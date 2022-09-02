@@ -3,23 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Fotografije</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--Fix for a problem with displaying text on mobile devices-->
+    <title>Galerija</title>
 
     <link rel="stylesheet" href="../css/navBar.css" />
     <link rel="stylesheet" href="../css/gallery.css" />
 </head>
 
 <body>
+    <!--Nav Bar-->
     <div class="navBar">
-        <a href="#!" class="icon" onclick="menuOpenClose(this)">
+        <a href="#!" class="icon" onclick="menuOpenClose(this)"> <!--Burger menu icon-->
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </a>
         <script type="text/javascript" src="../js/navMenu.js"></script>
         <a id="logo" href="../home.html"><img src="../images/HolidayHouseLogo.svg" height=100px /></a>
-        <a href="#" class="iconHidden">
+        <a href="#" class="iconHidden"> <!--Hidden burger menu icon on the opposite side of the nav bar, used for centering the logo-->
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -35,8 +36,8 @@
         </div>
     </div>
 
-    <!--scrollbar ID for JavaScript-->
-    <div id="scrollbar">
+    <div id="scrollbar"> <!--For hiding the scrollbar when the side menu is displayed fullscreen, on smaller devices. Works through JavaScript-->
+        <!--Image Grid-->
         <div class="imageGrid">
             <img id="img1" src="../images/houseFront.jpg" alt="Image can't be displayed"/>
             <img id="img2" src="../images/patio1.jpg" alt="Image can't be displayed"/>
@@ -55,7 +56,6 @@
             <img id="img15" src="../images/parking.jpg" alt="Image can't be displayed"/>
             <img id="img16" src="../images/bocce.jpg" alt="Image can't be displayed"/>
         </div>
-        <script type="text/javascript" src="../js/imageGrid.js"></script>
         <p id="footer">&copy; Filip Veljačić, 2022</p>
     </div>
 </body>

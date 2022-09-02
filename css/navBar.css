@@ -8,6 +8,8 @@
     align-items: center;
 }
 
+/* /////////////// Burger Menu Icon \\\\\\\\\\\\\\\ */
+
 .icon {
     margin: auto auto auto 20px;
     opacity: 0;
@@ -45,6 +47,8 @@
   
 .openClose > .line3 { transform: rotate(-45deg) translate(8px, -8px); }
 
+/* /////////////// Logo \\\\\\\\\\\\\\\ */
+
 .navBar > #logo {
     font-size: 0;
     opacity: 0;
@@ -55,8 +59,7 @@
     height: 100px;
 }
 
-/* /////////////// SIDE MENU \\\\\\\\\\\\\\\ */
-/* /////////////// SIDE MENU \\\\\\\\\\\\\\\ */
+/* /////////////// Side Menu \\\\\\\\\\\\\\\ */
 
 .navBar > #menu {
     display: none;
@@ -92,8 +95,7 @@
     border: none !important;
 }
 
-/* /////////////// ANIMATIONS \\\\\\\\\\\\\\\ */
-/* /////////////// ANIMATIONS \\\\\\\\\\\\\\\ */
+/* /////////////// Animations \\\\\\\\\\\\\\\ */
 
 @keyframes appear {
     from { opacity: 0; }
@@ -111,8 +113,7 @@
     }
 }
 
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
-/* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
+/* /////////////// Screensize Adjustments \\\\\\\\\\\\\\\ */
 
 @media screen and (max-width: 1080px)
 {
