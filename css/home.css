@@ -50,7 +50,7 @@ body {
     font-size: 28px;
     letter-spacing: 2px;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 8px;
 }
 
 .main > .menu:hover {
@@ -102,7 +102,13 @@ body {
 
 @media screen and (max-width: 500px)
 {
+    .main > .logo > img {
+        height: 180px;
+    }
     .main > .menu {
-        width: 350px;
+        margin: 8px 10px 8px 10px;
+        padding: 25px 0px 25px 0px;
+        width: 300px;
+        font-size: 24px;
     }
 }
