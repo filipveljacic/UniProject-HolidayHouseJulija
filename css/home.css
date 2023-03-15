@@ -1,5 +1,5 @@
-html { 
-    height: 100%; 
+html {
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -29,17 +29,17 @@ body {
     animation: 0.5s ease-in-out appear forwards;
 }
 
-.main > .logo {
+.main>.logo {
     padding: 0;
     margin: 20px 0px 20px 0px;
     font-size: 0;
 }
 
-.main > .logo > img {
+.main>.logo>img {
     height: 225px;
 }
 
-.main > .menu {
+.main>.menu {
     margin: 8px 10px 8px 10px;
     padding: 30px 0px 30px 0px;
     width: 400px;
@@ -53,11 +53,11 @@ body {
     border-radius: 8px;
 }
 
-.main > .menu:hover {
+.main>.menu:hover {
     background-color: #001830;
 }
 
-.main > p {
+.main>p {
     width: 100%;
     position: static;
     margin: 0 0 20px 0;
@@ -75,16 +75,20 @@ body {
 /* /////////////// ANIMATIONS \\\\\\\\\\\\\\\ */
 
 @keyframes appear {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 /* /////////////// SCREENSIZE ADJUSTMENTS \\\\\\\\\\\\\\\ */
 
-@media screen and (max-height: 1080px)
-{
-    .main > .menu {
+@media screen and (max-height: 1080px) {
+    .main>.menu {
         margin: 8px 10px 8px 10px;
         padding: 30px 0px 30px 0px;
         width: 400px;
@@ -93,20 +97,18 @@ body {
     }
 }
 
-@media screen and (max-height: 930px)
-{
+@media screen and (max-height: 930px) {
     .main {
         height: 930px;
     }
 }
 
-@media screen and (max-width: 500px)
-{
-    .main > .logo > img {
+@media screen and (max-width: 500px) {
+    .main>.logo>img {
         height: 180px;
     }
-    .main > .menu {
-        margin: 8px 10px 8px 10px;
+
+    .main>.menu {
         padding: 25px 0px 25px 0px;
         width: 300px;
         font-size: 24px;
