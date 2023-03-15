@@ -1,5 +1,6 @@
 html { 
     height: 100%; 
+    overflow-x: hidden;
 }
 
 body {
@@ -96,5 +97,12 @@ body {
 {
     .main {
         height: 930px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .main > .menu {
+        width: 350px;
     }
 }
